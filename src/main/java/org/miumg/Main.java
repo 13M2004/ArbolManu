@@ -1,14 +1,17 @@
 package org.miumg;
 
-import Datos.ArbolPersona;
-import Datos.Personas;
+import ArbolBinario.Arbol;
+import ArbolBinario.ArbolControles;
+
+import javax.swing.*;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
     public static void main(String[] args) {
-/*
+
         Arbol aarbol = new Arbol();
         aarbol.insertar(6);
         aarbol.insertar(10);
@@ -17,20 +20,47 @@ public class Main {
         aarbol.insertar(5);
         aarbol.insertar(3);
         aarbol.insertar(15);
-        // aarbol.insertar(8);
-        //aarbol.insertar(11);
 
-        ArbolCadena ar = new ArbolCadena();
+        SwingUtilities.invokeLater(() -> {
+            ArbolControles ventana = new ArbolControles(aarbol);
+            ventana.setVisible(true);
+        });
+
+
+
+        //aarbol.mostrarArbolGrafico();
+
+
+        /*System.out.println("\nRecorrido en Preorden");
+        aarbol.preorden();
+
+        System.out.println("\nRecorrido en Postorden");
+        aarbol.postorden();
+
+        System.out.println("\nRecorrido en Inorden");
+        aarbol.inorden();*/
+
+
+
+    }
+
+}
+
+
+// aarbol.insertar(8);
+//aarbol.insertar(11);
+
+        /*ArbolCadena ar = new ArbolCadena();
         ar.insertar("Farore");
         ar.insertar("Impa");
         ar.insertar("Navi");
-        ar.insertar("Farore");
+        ar.insertar("Farore");*/
 
 
-        System.out.println("fin!");
-    }*/
 
-        ArbolPersona perso = new ArbolPersona();
+//-----------------------------------------------
+
+/* ArbolPersona perso = new ArbolPersona();
 
         //Nodo Padre
         Personas p1 = new Personas();
@@ -64,8 +94,4 @@ public class Main {
         perso.mostrarInOrden();
 
         System.out.println("\nProceso Finalizado");
-    }
-
-}
-
-
+    }*/
